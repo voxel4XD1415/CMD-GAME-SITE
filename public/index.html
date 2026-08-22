@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD GAME SITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo"><span>&gt;</span> CMD GAME SITE<b>_</b></div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#games">GAMES</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="terminal">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>CMD_GAME_SITE.exe</span></div>
+        <div class="terminal-content">
+            <p>C:\CMD_GAME_SITE&gt; start</p>
+            <p>Loading CMD GAME SITE...</p>
+            <p>Searching games folder...</p>
+            <p class="green">Games database loaded.</p>
+            <p class="green">SYSTEM READY_</p>
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <div class="small-title">INDEPENDENT GAME DEVELOPMENT</div>
+        <h1>CMD <span>GAME</span> SITE</h1>
+        <p>My games. My projects. My experiments.</p>
+        <a href="#games" class="main-button">🎮 VIEW GAMES</a>
+    </div>
+</section>
+
+<section id="games" class="games-section">
+    <div class="section-header">
+        <div>MY PROJECTS</div>
+        <h2>GAMES</h2>
+    </div>
+
+    <div class="tools">
+        <input id="search" type="text" placeholder="🔎 Search games...">
+        <select id="filter">
+            <option value="all">ALL</option>
+            <option value="WINDOWS">WINDOWS</option>
+            <option value="ZIP">ZIP</option>
+            <option value="RAR">RAR</option>
+            <option value="7Z">7Z</option>
+        </select>
+    </div>
+
+    <div id="gamesContainer" class="games">
+        <div class="loading">LOADING GAMES...</div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-box">
+        <div class="small-title">ABOUT</div>
+        <h2>CMD GAME SITE</h2>
+        <p>Welcome to my personal game website.</p>
+        <p>New games are automatically detected from the games folder.</p>
+        <div class="green">MORE GAMES COMING SOON...</div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-logo">&gt; CMD GAME SITE_</div>
+    <p>Games • Projects • Experiments</p>
+    <p>© 2026 CMD GAME SITE</p>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-box">
+        <button id="closeModal" class="close">×</button>
+        <img id="modalImage" src="" alt="Game">
+        <div class="modal-info">
+            <div id="modalType" class="game-type"></div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalFile"></p>
+            <a id="downloadButton" class="download-button" href="#">⬇ DOWNLOAD GAME</a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
